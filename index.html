@@ -43,7 +43,7 @@ p{margin:0}
 /* nav */
 nav{position:sticky;top:0;z-index:20;background:rgba(13,79,49,.94);backdrop-filter:blur(8px);color:var(--cr)}
 nav .wrap{display:flex;align-items:center;gap:22px;padding:8px max(5vw,18px);flex-wrap:wrap}
-nav .logo{height:64px;width:auto}
+nav .logo{height:74px;width:auto}
 nav .links{display:flex;gap:22px;margin-left:auto;font-weight:700;flex-wrap:wrap}
 nav .links a{text-decoration:none;padding:10px 0}
 nav .links a:hover{color:var(--y)}
@@ -160,6 +160,13 @@ nav .btn{min-height:44px;font-size:16px;padding:0 18px;border-width:0}
 .soon img{max-width:360px;width:100%;margin:auto;filter:drop-shadow(0 16px 20px rgba(0,0,0,.25))}
 .soon h2{color:var(--g)}
 .soon p{margin-top:14px;max-width:32em;font-size:18px}
+/* local legends strip */
+.ll{background:#062a19;color:var(--cr);padding:22px max(5vw,18px);display:flex;align-items:center;justify-content:center;gap:24px;flex-wrap:wrap;text-align:left}
+.ll img{width:230px;height:auto;transition:transform .2s}
+.ll a:hover img{transform:rotate(-2deg) scale(1.03)}
+.ll p{font-size:14px;opacity:.8;max-width:34em}
+.ll b{color:var(--y)}
+@media(max-width:600px){.ll{text-align:center}.ll img{width:200px}}
 /* footer */
 footer{background:var(--g2);color:var(--cr);padding:50px max(5vw,18px) 34px}
 footer .wrap{display:flex;flex-wrap:wrap;gap:24px 40px;align-items:center;justify-content:space-between}
@@ -184,7 +191,7 @@ footer .bb a{color:var(--y);font-weight:700;text-decoration:none}
  .grid4{gap:12px}.card{padding:10px 10px 16px}.card h3{font-size:21px}.card p{font-size:14px}
  .facts{gap:8px}.facts div{padding:12px 6px}
  .polas{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}.pola{padding:6px 6px 8px}.pola span{font-size:13px}.pola::before{width:60px;height:20px}
- nav .logo{height:46px}
+ nav .logo{height:56px}
  .item img{height:140px}
 }
 @media(prefers-reduced-motion:reduce){*,*::before{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
@@ -192,7 +199,7 @@ footer .bb a{color:var(--y);font-weight:700;text-decoration:none}
 </head>
 <body>
 <nav><div class="wrap">
- <a href="#top" aria-label="कमल काका होम"><img class="logo" src="a/logo.webp" alt="कमल काका Coconut Crush" width="900" height="849"></a>
+ <a href="#top" aria-label="कमल काका होम"><img class="logo" src="a/logo-h.webp" alt="कमल काका Coconut Crush" width="700" height="422"></a>
  <div class="links"><a href="#kahani">कहानी</a><a href="#hunar">हुनर</a><a href="#menu">मेन्यू</a><a href="#pata">पता</a></div>
  <a class="btn b-y" href="https://www.google.com/maps/search/?api=1&query=Agrasen+Square+Sapna+Sangeeta+Road+Indore" target="_blank" rel="noopener">रास्ता देखें</a>
 </div></nav>
@@ -300,6 +307,7 @@ footer .bb a{color:var(--y);font-weight:700;text-decoration:none}
  <div class="meta">कमल काका · Coconut Crush Indore<br>अग्रसेन चौराहा, सपना संगीता रोड, इंदौर<br>doctornariyal.com · © 2026</div>
  <div class="bb">Brand &amp; website by <a href="https://thebeyondbranding.com" target="_blank" rel="noopener">Beyond Branding</a></div>
 </div></footer>
+<div class="ll"><a href="https://thebeyondbranding.com/legends" target="_blank" rel="noopener" aria-label="Local Legends by Beyond Branding"><img src="a/local-legends.webp" alt="Local Legends · ठेले से ब्रांड तक · thebeyondbranding.com" width="720" height="234" loading="lazy"></a><p>कमल काका, <b>Local Legends Nº 001</b>: Beyond Branding का अभियान, जो इंदौर के छोटे कारोबारों को ठेले से ब्रांड तक ले जाता है।</p></div>
 
 <script>
 {
