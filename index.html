@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>कमल काका · Coconut Crush Indore</title>
+<meta name="description" content="कमल काका, इंदौर का अपना नारियल वाला। 1985 से अग्रसेन चौराहे पर ताज़ा नारियल पानी, मलाई वाला नारियल और काका क्रश। Fresh coconut water & coconut crush at Agrasen Square, Indore.">
+<meta property="og:title" content="कमल काका · इंदौर का अपना नारियल वाला">
+<meta property="og:description" content="1985 से अग्रसेन चौराहा, इंदौर। नारियल पानी, मलाई वाला नारियल और काका क्रश।">
+<meta property="og:image" content="a/logo.webp">
+<meta name="theme-color" content="#0D4F31">
+<link rel="icon" href="a/logo.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Mukta:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+/* VOICE: warm, loud, proud — a street legend's own signboard, not a café brochure
+   IDEA: the thela itself — painted stall board, stickers slapped on, taped photos
+   PICTURE: illustrated Kaka in a yellow sun with crush & coconut stickers around him
+   COLOUR+TYPE: coconut-husk green field, mango yellow accent, malai cream; Baloo 2 + Mukta
+   LAYOUT: full-bleed colour bands like stall panels; stack on phones */
+:root{--g:#0D4F31;--g2:#0A3F27;--g3:#145F3B;--y:#F6C42B;--cr:#FBF0DE;--cu:#F3E2BE;--rd:#D9362B;--lf:#86BC3B;--ink:#13261B;color-scheme:light}
+*{box-sizing:border-box;min-width:0}
+html{scroll-behavior:smooth;scroll-padding-top:76px}
+body{margin:0;background:var(--cr);color:var(--ink);font:17px/1.6 Mukta,system-ui,sans-serif;overflow-x:clip}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3{font-family:"Baloo 2",Mukta,sans-serif;line-height:1.05;margin:0;text-wrap:balance;font-weight:800}
+h2{font-size:clamp(34px,5vw,52px)}
+h3{font-size:26px;font-weight:700}
+p{margin:0}
+.wrap{max-width:1240px;margin:0 auto}
+.band{padding:clamp(56px,8vw,110px) max(5vw,18px);position:relative}
+.grain::after{content:"";position:absolute;inset:0;pointer-events:none;opacity:.08;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+.green{background:var(--g);color:var(--cr)}
+.yellow{background:var(--y);color:var(--g)}
+.btn{display:inline-flex;align-items:center;gap:10px;min-height:52px;padding:0 26px;border-radius:99px;font:700 18px/1 "Baloo 2",sans-serif;text-decoration:none;border:3px solid var(--g);transition:transform .2s}
+.btn:hover{transform:translateY(-3px) rotate(-1deg)}
+.btn:focus-visible,.navbtn:focus-visible,a:focus-visible{outline:3px solid var(--y);outline-offset:3px}
+.b-y{background:var(--y);color:var(--g);box-shadow:0 5px 0 var(--g2)}
+.b-o{background:transparent;color:var(--cr);border-color:var(--cr)}
+.b-g{background:var(--g);color:var(--cr);box-shadow:0 5px 0 #062a19}
+.pill{display:inline-block;padding:6px 16px;border-radius:99px;font:700 15px/1.4 Mukta,sans-serif}
+/* nav */
+nav{position:sticky;top:0;z-index:20;background:rgba(13,79,49,.94);backdrop-filter:blur(8px);color:var(--cr)}
+nav .wrap{display:flex;align-items:center;gap:22px;padding:8px max(5vw,18px);flex-wrap:wrap}
+nav .logo{height:64px;width:auto}
+nav .links{display:flex;gap:22px;margin-left:auto;font-weight:700;flex-wrap:wrap}
+nav .links a{text-decoration:none;padding:10px 0}
+nav .links a:hover{color:var(--y)}
+nav .btn{min-height:44px;font-size:16px;padding:0 18px;border-width:0}
+/* hero */
+.hero{padding-top:clamp(40px,6vw,80px);padding-bottom:0;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:30px;align-items:center}
+.hero .pill{background:var(--y);color:var(--g)}
+.hero h1{font-size:clamp(48px,7.2vw,92px);margin:18px 0 18px;color:var(--cr)}
+.hero h1 span{color:var(--y)}
+.hero p.lead{font-size:clamp(18px,1.6vw,21px);max-width:34em;opacity:.95}
+.hero p.en{font-size:15px;opacity:.7;margin-top:8px}
+.cta{display:flex;gap:14px;flex-wrap:wrap;margin-top:28px}
+.stage{position:relative;aspect-ratio:1/1.02;max-width:600px;width:100%;justify-self:center}
+.sun{position:absolute;inset:7% 6% 2%;border-radius:50%;background:radial-gradient(circle at 50% 40%,#FFD95C,var(--y) 60%,#E8A91C)}
+.rays{position:absolute;inset:-6%;background:repeating-conic-gradient(from 0deg,rgba(246,196,43,.18) 0 6deg,transparent 6deg 18deg);border-radius:50%;animation:spin 60s linear infinite;-webkit-mask:radial-gradient(circle,#000 45%,transparent 70%);mask:radial-gradient(circle,#000 45%,transparent 70%)}
+@keyframes spin{to{transform:rotate(360deg)}}
+.stage .kaka{position:absolute;left:12%;right:10%;bottom:0;width:78%;filter:drop-shadow(0 20px 30px rgba(0,0,0,.35))}
+.st{position:absolute;filter:drop-shadow(0 10px 14px rgba(0,0,0,.3));animation:bob 4s ease-in-out infinite}
+.st.s1{width:34%;left:-4%;top:6%;--r:-10deg}
+.st.s2{width:36%;right:-6%;top:2%;--r:8deg;animation-delay:-1s}
+.st.s3{width:26%;right:-4%;bottom:12%;--r:6deg;animation-delay:-2s}
+.st.s4{width:20%;left:-2%;bottom:18%;--r:-6deg;animation-delay:-3s}
+@keyframes bob{0%,100%{transform:translateY(0) rotate(var(--r))}50%{transform:translateY(-12px) rotate(calc(var(--r) + 3deg))}}
+/* ticker */
+.ticker{background:var(--y);color:var(--g);border-block:4px solid var(--g2);overflow:hidden;font:800 clamp(22px,2.6vw,30px)/1 "Baloo 2",sans-serif;padding:16px 0;white-space:nowrap}
+.ticker div{display:inline-flex;gap:28px;animation:tick 28s linear infinite;padding-left:28px}
+.ticker i{font-style:normal;color:var(--rd)}
+@keyframes tick{to{transform:translateX(-50%)}}
+/* real */
+.real .wrap{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1fr);gap:clamp(30px,6vw,80px);align-items:center}
+.phone{position:relative;max-width:360px;width:100%;justify-self:center;border:10px solid var(--g);border-radius:38px;overflow:hidden;box-shadow:14px 14px 0 var(--y),0 30px 50px rgba(0,0,0,.2);transform:rotate(-2deg);background:var(--g)}
+.phone video{width:100%;aspect-ratio:9/16;object-fit:cover;display:block}
+.phone .tag{position:absolute;left:14px;top:14px;background:var(--rd);color:#fff;font:700 13px/1 Mukta;padding:6px 10px;border-radius:6px}
+.real h2{color:var(--g)}
+.real p{margin-top:16px;max-width:32em}
+.facts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:30px}
+.facts div{background:#fff;border:3px solid var(--g);border-radius:18px;padding:16px 14px;text-align:center}
+.facts b{display:block;font:800 clamp(30px,3.6vw,42px)/1 "Baloo 2",Mukta,sans-serif;color:var(--g)}
+.facts span{font-size:15px;color:#3d5446}
+/* skills */
+.skills h2{text-align:center}
+.skills .sub{text-align:center;opacity:.85;margin:12px auto 0;max-width:36em}
+.grid4{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px;margin-top:44px}
+.card{background:var(--g3);border-radius:26px;padding:16px 16px 22px;text-align:center;border:2px solid rgba(251,240,222,.12);transition:transform .25s}
+.card:hover{transform:translateY(-6px) rotate(-1deg)}
+.card img{width:86%;margin:0 auto -6px;aspect-ratio:1/1.08;object-fit:contain}
+.card h3{color:var(--y);margin-top:8px}
+.card p{font-size:16px;opacity:.9;margin-top:6px}
+.quote{margin:56px auto 0;max-width:820px;text-align:center;font:700 clamp(24px,3vw,34px)/1.3 "Baloo 2";color:var(--cr)}
+.quote em{display:block;font:500 16px Mukta;font-style:normal;color:var(--y);margin-top:12px}
+/* story */
+.story h2{color:var(--g)}
+.shead{display:flex;justify-content:space-between;align-items:end;gap:20px;flex-wrap:wrap}
+.arrows{display:flex;gap:10px}
+.navbtn{width:52px;height:52px;border-radius:50%;border:3px solid var(--g);background:var(--cr);color:var(--g);font:800 22px "Baloo 2";cursor:pointer}
+.navbtn:hover{background:var(--y)}
+.track{display:flex;gap:22px;overflow-x:auto;scroll-snap-type:x mandatory;padding:36px 4px 26px;scrollbar-width:none}
+.track::-webkit-scrollbar{display:none}
+.chap{flex:0 0 min(400px,84%);scroll-snap-align:start;background:#fff;border-radius:22px;padding:14px 14px 24px;box-shadow:0 12px 0 var(--cu);border:3px solid var(--g)}
+.chap:nth-child(even){transform:rotate(1deg)}.chap:nth-child(odd){transform:rotate(-1deg)}
+.chap figure{margin:0;position:relative;border-radius:14px;overflow:hidden}
+.chap figure img{aspect-ratio:16/10;object-fit:cover;width:100%}
+.chap figcaption{position:absolute;right:8px;bottom:8px;background:rgba(0,0,0,.6);color:#fff;font-size:12px;padding:3px 8px;border-radius:6px}
+.chap .k{display:inline-block;margin:16px 4px 8px;background:var(--y);color:var(--g);font:700 14px/1 Mukta;padding:6px 12px;border-radius:99px}
+.chap h3{color:var(--g);margin:0 4px}
+.chap p{margin:8px 4px 0;font-size:16px;color:#33473b}
+.credit{font-size:14px;color:#55695c}
+/* menu */
+.menu{background:var(--g2);color:var(--cr)}
+.board{border:6px solid var(--y);border-radius:30px;padding:clamp(24px,4vw,50px);background:var(--g);box-shadow:inset 0 0 0 3px var(--g2),0 24px 50px rgba(0,0,0,.3)}
+.board h2{text-align:center;color:var(--y)}
+.board .sub{text-align:center;margin-top:10px;opacity:.85}
+.items{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;margin-top:40px}
+.item{background:var(--g3);border-radius:24px;padding:22px;position:relative;display:flex;flex-direction:column;align-items:center;text-align:center}
+.item img{height:170px;width:auto;object-fit:contain;margin-bottom:8px}
+.item h3{color:var(--cr)}
+.item .en{font-size:15px;color:#cfe2cf}
+.item p{font-size:16px;margin-top:10px;opacity:.9}
+.item.sig{background:var(--y);color:var(--g)}
+.item.sig h3,.item.sig .en{color:var(--g)}
+.item.sig .badge{position:absolute;top:-16px;right:18px;background:var(--rd);color:#fff;font:700 15px/1 "Baloo 2";padding:9px 14px;border-radius:99px;transform:rotate(4deg)}
+.note{text-align:center;margin-top:26px;font-size:15px;opacity:.75}
+/* photos */
+.photos h2{color:var(--g);text-align:center}
+.polas{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(14px,3vw,36px);margin-top:44px}
+.pola{background:#fff;padding:12px 12px 16px;box-shadow:0 18px 30px rgba(19,38,27,.18);position:relative}
+.pola img{aspect-ratio:3/4;object-fit:cover;width:100%}
+.pola span{display:block;text-align:center;font:700 18px "Baloo 2";color:var(--g);margin-top:10px}
+.pola::before{content:"";position:absolute;top:-14px;left:50%;width:110px;height:32px;transform:translateX(-50%) rotate(-4deg);background:rgba(246,196,43,.78)}
+.pola:nth-child(1){transform:rotate(-3deg)}.pola:nth-child(2){transform:rotate(2deg) translateY(18px)}.pola:nth-child(3){transform:rotate(-1.5deg)}
+/* press */
+.press .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(24px,5vw,60px);align-items:center}
+.yt{display:block;position:relative;border-radius:22px;overflow:hidden;border:4px solid var(--g);box-shadow:12px 12px 0 var(--g)}
+.yt img{aspect-ratio:16/9;object-fit:cover;width:100%}
+.yt .play{position:absolute;inset:0;margin:auto;width:84px;height:84px;border-radius:50%;background:var(--rd);display:grid;place-items:center;box-shadow:0 8px 20px rgba(0,0,0,.35)}
+.yt .play::after{content:"";border-left:26px solid #fff;border-block:16px solid transparent;margin-left:6px}
+.press h2{color:var(--g)}
+.press blockquote{margin:18px 0 22px;font:700 22px/1.35 "Baloo 2";color:var(--ink);border-left:6px solid var(--y);padding-left:18px}
+/* visit */
+.visit .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(30px,5vw,70px);align-items:center}
+.visit h2{color:var(--y)}
+.addr{font:800 clamp(28px,3.4vw,40px)/1.15 "Baloo 2";margin-top:20px}
+.lm{list-style:none;padding:0;margin:18px 0 0;display:grid;gap:10px}
+.lm li{display:flex;gap:12px;align-items:center;font-size:18px}
+.lm li::before{content:"";flex:none;width:14px;height:14px;border-radius:50%;background:var(--y)}
+.sketch{position:relative}
+.sketch img{width:100%;max-width:480px;margin:auto}
+.pin{position:absolute;top:-6%;right:14%;width:84px;height:84px;border-radius:50% 50% 50% 0;background:var(--y);transform:rotate(-45deg);box-shadow:0 10px 20px rgba(0,0,0,.3);animation:drop 2.4s ease-in-out infinite}
+.pin::after{content:"";position:absolute;inset:26px;border-radius:50%;background:var(--g)}
+@keyframes drop{0%,100%{translate:0 0}50%{translate:0 -10px}}
+/* soon */
+.soon .wrap{display:grid;grid-template-columns:minmax(0,.7fr) minmax(0,1fr);gap:40px;align-items:center}
+.soon img{max-width:360px;width:100%;margin:auto;filter:drop-shadow(0 16px 20px rgba(0,0,0,.25))}
+.soon h2{color:var(--g)}
+.soon p{margin-top:14px;max-width:32em;font-size:18px}
+/* footer */
+footer{background:var(--g2);color:var(--cr);padding:50px max(5vw,18px) 34px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:24px 40px;align-items:center;justify-content:space-between}
+footer img{height:120px;width:auto}
+footer .meta{font-size:15px;opacity:.8}
+footer .bb{font-size:15px}
+footer .bb a{color:var(--y);font-weight:700;text-decoration:none}
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .7s,transform .7s}
+.reveal.in{opacity:1;transform:none}
+@media(max-width:900px){
+ .hero .wrap,.real .wrap,.press .wrap,.visit .wrap,.soon .wrap{grid-template-columns:minmax(0,1fr)}
+ .grid4{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .items{grid-template-columns:minmax(0,1fr)}
+ nav .links{display:none}
+ nav .btn{margin-left:auto}
+ .stage{max-width:460px}
+ .phone{max-width:290px}
+}
+@media(max-width:600px){
+ body{font-size:16px}
+ .hero h1{font-size:48px}
+ .grid4{gap:12px}.card{padding:10px 10px 16px}.card h3{font-size:21px}.card p{font-size:14px}
+ .facts{gap:8px}.facts div{padding:12px 6px}
+ .polas{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}.pola{padding:6px 6px 8px}.pola span{font-size:13px}.pola::before{width:60px;height:20px}
+ nav .logo{height:46px}
+ .item img{height:140px}
+}
+@media(prefers-reduced-motion:reduce){*,*::before{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<nav><div class="wrap">
+ <a href="#top" aria-label="कमल काका होम"><img class="logo" src="a/logo.webp" alt="कमल काका Coconut Crush" width="900" height="849"></a>
+ <div class="links"><a href="#kahani">कहानी</a><a href="#hunar">हुनर</a><a href="#menu">मेन्यू</a><a href="#pata">पता</a></div>
+ <a class="btn b-y" href="https://www.google.com/maps/search/?api=1&query=Agrasen+Square+Sapna+Sangeeta+Road+Indore" target="_blank" rel="noopener">रास्ता देखें</a>
+</div></nav>
+
+<header class="band green grain hero" id="top"><div class="wrap">
+ <div>
+  <span class="pill">अग्रसेन चौराहा, इंदौर · सन् 1985 से</span>
+  <h1>इंदौर का अपना<br><span>नारियल वाला</span></h1>
+  <p class="lead">40 साल से एक ही चौराहा, एक ही मुस्कान। ताज़ा नारियल पानी, मलाई वाला नारियल और काका का सिग्नेचर कोकोनट क्रश।</p>
+  <p class="en">Fresh coconut water &amp; coconut crush at Agrasen Square, Indore, since 1985.</p>
+  <div class="cta">
+   <a class="btn b-y" href="https://www.google.com/maps/search/?api=1&query=Agrasen+Square+Sapna+Sangeeta+Road+Indore" target="_blank" rel="noopener">काका तक पहुँचिए →</a>
+   <a class="btn b-o" href="https://instagram.com/doctornariyal" target="_blank" rel="noopener">@doctornariyal</a>
+  </div>
+ </div>
+ <div class="stage" aria-hidden="true">
+  <div class="rays"></div><div class="sun"></div>
+  <img class="kaka" src="a/kaka-hero.webp" alt="">
+  <img class="st s1" src="a/st-1985.webp" alt="">
+  <img class="st s2" src="a/st-crush.webp" alt="">
+  <img class="st s3" src="a/st-glass.webp" alt="">
+  <img class="st s4" src="a/st-coconut.webp" alt="">
+ </div>
+</div></header>
+
+<div class="ticker" aria-hidden="true"><div id="tk"></div></div>
+
+<section class="band real"><div class="wrap">
+ <div class="phone reveal"><span class="tag">● असली ठेला</span><video src="a/loop.mp4" poster="a/loop-poster.webp" autoplay muted loop playsinline></video></div>
+ <div class="reveal">
+  <h2>हर नारियल,<br>आपके सामने</h2>
+  <p>काका खुद नारियल चुनते हैं, खुद काटते हैं और खुद पिलाते हैं। कोई पैकेट नहीं, कोई जल्दी नहीं। 1985 से यही तरीका है, और इंदौर इसी के लिए लौट-लौट कर आता है।</p>
+  <div class="facts"><div><b>1985</b><span>से वही ठेला</span></div><div><b>40</b><span>साल का भरोसा</span></div><div><b>1</b><span>ही चौराहा</span></div></div>
+ </div>
+</div></section>
+
+<section class="band green grain skills" id="hunar"><div class="wrap">
+ <h2 class="reveal">लोग इन्हें <span style="color:var(--y)">डॉक्टर</span> क्यों कहते हैं?</h2>
+ <p class="sub reveal">क्योंकि नारियल को काका से बेहतर कोई नहीं पढ़ता।</p>
+ <div class="grid4" id="skills"></div>
+ <p class="quote reveal">"आँख पर पट्टी बाँध दो, फिर भी बता देंगे: पानी वाला है या मलाई वाला।"<em>इसी हुनर पर इंदौर ने नाम दिया: डॉक्टर कमल</em></p>
+</div></section>
+
+<section class="band story" id="kahani"><div class="wrap">
+ <div class="shead reveal">
+  <div><h2>काका की कहानी</h2><p class="credit" style="margin-top:8px">ठेले से ब्रांड तक, 40 साल का सफ़र</p></div>
+  <div class="arrows"><button class="navbtn" id="prev" aria-label="पिछला">←</button><button class="navbtn" id="next" aria-label="अगला">→</button></div>
+ </div>
+ <div class="track" id="track" tabindex="0" aria-label="काका की कहानी"></div>
+ <p class="credit">तस्वीरें: Aamchi Indore के वीडियो से, आभार सहित।</p>
+</div></section>
+
+<section class="band menu grain" id="menu"><div class="wrap">
+ <div class="board reveal">
+  <h2>काका का मेन्यू</h2>
+  <p class="sub">तीन चीज़ें। तीनों ताज़ा, आपके सामने बनी।</p>
+  <div class="items" id="items"></div>
+  <p class="note">रेट और आज का स्टॉक ठेले पर पूछें।</p>
+ </div>
+</div></section>
+
+<section class="band photos"><div class="wrap">
+ <h2 class="reveal">अग्रसेन चौराहे से</h2>
+ <div class="polas">
+  <figure class="pola reveal" style="margin:0"><img src="a/real-smile.webp" alt="कमल काका ठेले पर मुस्कुराते हुए" loading="lazy"><span>वही मुस्कान</span></figure>
+  <figure class="pola reveal" style="margin:0"><img src="a/real-2.webp" alt="काका ठेले के पास नारियल के साथ" loading="lazy"><span>सफ़ेद टोपी, पहचान काका की</span></figure>
+  <figure class="pola reveal" style="margin:0"><img src="a/real-8.webp" alt="रात में काका का ठेला" loading="lazy"><span>रात तक खुला ठेला</span></figure>
+ </div>
+</div></section>
+
+<section class="band press"><div class="wrap">
+ <a class="yt reveal" href="https://youtu.be/_WFliTmbsTA" target="_blank" rel="noopener" aria-label="Aamchi Indore पर काका का वीडियो देखें"><img src="a/yt-31.webp" alt="" loading="lazy"><span class="play"></span></a>
+ <div class="reveal">
+  <span class="pill" style="background:var(--g);color:var(--cr)">जैसा दिखा · Aamchi Indore</span>
+  <h2 style="margin-top:16px">इंदौर ने देखा,<br>इंदौर ने माना</h2>
+  <blockquote>"35 साल नारियल पानी बेचने के बाद लोगों ने बोला डॉक्टर कमल"</blockquote>
+  <a class="btn b-g" href="https://youtu.be/_WFliTmbsTA" target="_blank" rel="noopener">पूरा वीडियो देखें</a>
+ </div>
+</div></section>
+
+<section class="band green grain visit" id="pata"><div class="wrap">
+ <div class="reveal">
+  <h2>यहीं मिलेंगे काका</h2>
+  <p class="addr">अग्रसेन चौराहा,<br>सपना संगीता रोड, इंदौर</p>
+  <ul class="lm"><li>शहनाई साड़ी के पास</li><li>मोरनी साड़ी के पास</li><li>पहचान: छतरी वाला नारियल का ठेला, सफ़ेद टोपी वाले काका</li></ul>
+  <div class="cta">
+   <a class="btn b-y" href="https://www.google.com/maps/search/?api=1&query=Agrasen+Square+Sapna+Sangeeta+Road+Indore" target="_blank" rel="noopener">Google Maps पर खोलें</a>
+   <a class="btn b-o" href="https://instagram.com/doctornariyal" target="_blank" rel="noopener">Instagram</a>
+  </div>
+ </div>
+ <div class="sketch reveal"><span class="pin" aria-hidden="true"></span><img src="a/stall-sketch.webp" alt="काका के ठेले का स्केच" loading="lazy"></div>
+</div></section>
+
+<section class="band yellow soon"><div class="wrap">
+ <img class="reveal" src="a/kaka-namaste.webp" alt="कमल काका नमस्ते करते हुए" loading="lazy">
+ <div class="reveal">
+  <h2>काका का ब्रांड,<br>अब और आगे</h2>
+  <p>ठेले से शुरू हुआ नाम अब ब्रांड बन रहा है। जल्द ही काका के नाम से कुछ नया आने वाला है। सबसे पहले जानने के लिए Instagram पर फ़ॉलो करें।</p>
+  <div class="cta"><a class="btn b-g" href="https://instagram.com/doctornariyal" target="_blank" rel="noopener">@doctornariyal फ़ॉलो करें</a></div>
+ </div>
+</div></section>
+
+<footer><div class="wrap">
+ <img src="a/logo.webp" alt="कमल काका" loading="lazy" width="900" height="849">
+ <div class="meta">कमल काका · Coconut Crush Indore<br>अग्रसेन चौराहा, सपना संगीता रोड, इंदौर<br>doctornariyal.com · © 2026</div>
+ <div class="bb">Brand &amp; website by <a href="https://thebeyondbranding.com" target="_blank" rel="noopener">Beyond Branding</a></div>
+</div></footer>
+
+<script>
+{
+const tk=['नारियल पानी','मलाई वाला नारियल','काका क्रश','सन् 1985 से','अग्रसेन चौराहा','इंदौर वालों का अपना काका'];
+const row=tk.map(t=>`<span>${t}</span><i>✦</i>`).join('');
+document.getElementById('tk').innerHTML=row+row+row+row;
+
+const skills=[['sk-dekh','देखते हैं','हर नारियल को ध्यान से परखते हैं, रंग से उम्र तक।'],['sk-sun','सुनते हैं','ठोक कर सुनते हैं कि अंदर कितना पानी है।'],['sk-kaat','काटते हैं','एक वार, साफ़ कट। 40 साल की प्रैक्टिस।'],['sk-pila','पिलाते हैं','मुस्कान के साथ, ग्लास भर के।']];
+document.getElementById('skills').innerHTML=skills.map(([i,h,p])=>`<div class="card reveal"><img src="a/${i}.webp" alt="" loading="lazy"><h3>${h}</h3><p>${p}</p></div>`).join('');
+
+const chaps=[['yt-31','मिलिए','कमल काका से','अग्रसेन चौराहा, इंदौर। सन् 1985 से नारियल पानी और कोकोनट क्रश।'],['yt-152','जहाँ से शुरुआत हुई','ठेले से नारियल तक','पहले साइकिल के ठेले पर फल बेचते थे। फिर धन्नालाल गुरु ने नारियल का ठेला सौंपा: "बेच के देखो, नहीं बिका तो पैसे मत देना।"'],['yt-752','शुरुआती दिन','तीन नारियल, ₹10','तब नारियल पानी कोई नहीं पीता था। काका आवाज़ लगाते: "साहब, तीन ले लो दस में!" धीरे-धीरे इंदौर ने अपना लिया।'],['yt-257','नाम कैसे पड़ा','डॉक्टर कमल','आँख पर पट्टी बाँध दो, फिर भी बता देंगे: पानी वाला या मलाई वाला। इसी हुनर पर लोगों ने नाम दिया "डॉक्टर"।'],['yt-617','2011 से','काका क्रश','बच्चों के साथ साउथ घूमने गए, वहाँ मलाई वाला क्रश चखा और इंदौर ले आए।'],['yt-727','आज भी','वही चौराहा, वही काका','अग्रसेन चौराहा, इंदौर। आइए, एक बार काका का क्रश पी के देखिए।']];
+const track=document.getElementById('track');
+track.innerHTML=chaps.map(([i,k,h,p])=>`<article class="chap"><figure><img src="a/${i}.webp" alt="" loading="lazy"><figcaption>Video: Aamchi Indore</figcaption></figure><span class="k">${k}</span><h3>${h}</h3><p>${p}</p></article>`).join('');
+const step=d=>{const c=track.querySelector('.chap');track.scrollBy({left:d*(c.offsetWidth+22),behavior:'smooth'})};
+document.getElementById('prev').onclick=()=>step(-1);document.getElementById('next').onclick=()=>step(1);
+track.addEventListener('keydown',e=>{if(e.key==='ArrowRight'){e.preventDefault();step(1)}if(e.key==='ArrowLeft'){e.preventDefault();step(-1)}});
+
+const items=[['st-coconut','नारियल पानी','Tender coconut water','ताज़ा नारियल, सामने काटा, सीधे स्ट्रॉ के साथ।',0],['menu-crush','काका क्रश','Kaka\'s coconut crush','मलाई + नारियल पानी + थोड़ी शक्कर + बर्फ़, ब्लेंड करके। 2011 से काका की पहचान।',1],['st-half','मलाई वाला नारियल','Coconut with malai','पानी पीजिए, फिर काका मलाई निकाल के देंगे।',0]];
+document.getElementById('items').innerHTML=items.map(([i,h,en,p,s])=>`<div class="item${s?' sig':''}">${s?'<span class="badge">सिग्नेचर</span>':''}<img src="a/${i}.webp" alt="" loading="lazy"><h3>${h}</h3><span class="en">${en}</span><p>${p}</p></div>`).join('');
+
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+}
+</script>
+</body>
+</html>
